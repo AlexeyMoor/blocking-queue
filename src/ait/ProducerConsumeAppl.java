@@ -21,6 +21,5 @@ public class ProducerConsumeAppl {
         }
 
         Thread.sleep(N_MESSAGES / N_CONSUMERS * MSG_HANDLING_TIME_MILLIS + 1000);
-
     }
 }

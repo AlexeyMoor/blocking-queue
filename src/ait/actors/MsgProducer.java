@@ -2,7 +2,7 @@ package ait.actors;
 
 import ait.mediation.BlkQueue;
 
-public class MsgProducer extends Thread{
+public class MsgProducer extends Thread {
     BlkQueue<String> blkQueue;
     int nMessages;
     int sendIntervalMillis;

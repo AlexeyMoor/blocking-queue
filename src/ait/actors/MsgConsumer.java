@@ -2,7 +2,7 @@ package ait.actors;
 
 import ait.mediation.BlkQueue;
 
-public class MsgConsumer extends Thread{
+public class MsgConsumer extends Thread {
     BlkQueue<String> blkQueue;
     int msgHandlingTimeMillis;
 
