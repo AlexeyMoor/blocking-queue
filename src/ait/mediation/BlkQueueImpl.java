@@ -1,13 +1,12 @@
 package ait.mediation;
 
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class BlkQueueImpl<T> implements BlkQueue<T> {
-    private final Queue<T> queue = new LinkedList<>();
+    private final LinkedList<T> queue = new LinkedList<>();
     private final int maxSize;
     private final Lock mutex = new ReentrantLock();
     private final Condition consumerWaitCondition = mutex.newCondition();
